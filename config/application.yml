@@ -1,0 +1,12 @@
+server:
+  port: 8080
+datasource:
+  driverName: sqlite3
+  dbuser: root
+  dbpass: channel
+  dbhost: 192.168.204.222
+  dbport: 3306
+  dbname: ginGormDemo
+  charset: utf8
+  loc: Asia/Shanghai
+  tablePrefix: wk_
