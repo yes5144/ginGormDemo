@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+		stage('unittest') {
+            steps {
+                echo 'unittest ..'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building server go ..'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+	
+   post { //构建完成后置操作
+        aborted { //如果构建中断，则执行
+            echo '构建被中止!'
+        }
+        success { //构建成功执行
+            echo '构建成功!'
+        }
+       failure { //构建失败执行
+           echo '构建失败!'
+       }
+    }
+}
