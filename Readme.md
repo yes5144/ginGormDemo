@@ -18,3 +18,13 @@ go mod tidy
     4. read config from yml
 
 2020-03-13 参考：https://eddycjy.com/posts/go/gin/2018-02-11-api-01/
+
+
+## docker-compose
+```
+### go build && docker build
+sh build.sh
+
+### docker-compose
+docker-compose -f .docker-compose.yaml up -d
+```

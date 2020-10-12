@@ -1,12 +1,12 @@
 server:
-  port: 8080
+  port: 88
 datasource:
-  driverName: sqlite3
+  driverName: mysql
   dbuser: root
-  dbpass: channel
-  dbhost: 192.168.204.222
+  dbpass: 123456
+  dbhost: gin-mysql
   dbport: 3306
   dbname: ginGormDemo
-  charset: utf8
+  charset: utf8mb4
   loc: Asia/Shanghai
   tablePrefix: wk_
